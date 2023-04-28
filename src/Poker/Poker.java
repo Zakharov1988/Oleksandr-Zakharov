@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Poker {
     public static final int Number_of_cards = 52;
-    private final static int Number_of_players = 4;
+    int Number_of_players;
 
     private static String[] deck = new String[Number_of_cards];
 
@@ -16,6 +16,7 @@ public class Poker {
 
 
     private static void createDeck() {
+
         String[] suites = {"Hearts", "Clubs", "Diamonds", "Spades"};
         String[] values = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
 
@@ -39,6 +40,7 @@ public class Poker {
         }
     }
     private static void serveCards() {
+        int Number_of_players = 4;
         int index = 0;
         for (int round=1; round<=5; round++) {
             System.out.println("Round: " + round);
