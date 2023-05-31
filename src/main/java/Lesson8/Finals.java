@@ -10,7 +10,7 @@ public class Finals {
         FINAL_CONST_VAR = value;
     }
 
-    public void updateVar() {
-        FINAL_VAR_NAME = "newName";
-    }
+  //  public void updateVar() {
+    //    FINAL_VAR_NAME = "newName";
+   // }
 }
