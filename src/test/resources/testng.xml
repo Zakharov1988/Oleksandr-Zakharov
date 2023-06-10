@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1" verbose="1" >
+<suite name="Suite1" verbose="1" parallel="tests">
     <test name="Nopackage" >
         <!--<classes>
             <class name="ua.hillel.tests.SecondTest"/>
@@ -9,16 +9,26 @@
     </test>
 
     <test name="Regression1">
+        <parameter name="browser" value="chrome"></parameter>
+        <packages>
+            <package name="wd.wdTest"></package>
+        </packages>
+        <packages>
+            <package name="wd.HomeWork17"></package>
+        </packages>
+    </test>
+
+</suite>
 <!--        <packages>-->
 <!--            <package name="ua.hillel.tests.login"/>-->
 <!--            <package name="ua.hillel.tests.cart"/>-->
 <!--            <package name="ua.hillel.tests.orders"/>-->
 <!--            <package name="ua.hillel.tests.actions"/>-->
 <!--        </packages>-->
-        <parameter name="url" value="http://stage1.com"></parameter>
-        <parameter name="browserName" value="chrome"></parameter>
-        <classes>
-            <class name="ua.hillel.tests.ParamTest"/>
-        </classes>
-    </test>
-</suite>
+        <!--      <parameter name="url" value="http://stage1.com"></parameter>
+              <parameter name="browserName" value="chrome"></parameter>
+              <classes>
+                  <class name="ua.hillel.tests.ParamTest"/>
+              </classes>
+          </test>
+     </suite>
