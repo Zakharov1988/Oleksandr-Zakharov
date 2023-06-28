@@ -17,6 +17,7 @@ public class editFileTest extends BaseTest {
 
     public static void main(String[] args) throws IOException {
 //        File uploadFile = new File("target/downloads/Test2.txt");
+
         var path = Path.of("target/downloads/Test2.txt");
         List<String> lines = Files.readAllLines(path);
         //lines.forEach(System.out::println);
@@ -24,7 +25,7 @@ public class editFileTest extends BaseTest {
         try(FileWriter writer = new FileWriter("target/downloads/Test2.txt", false))
         {
             // запись всей строки
-            String text = "Hello Gold!";
+            String text = "Hello!";
             writer.write(text);
             // запись по символам
             writer.append('\n');
