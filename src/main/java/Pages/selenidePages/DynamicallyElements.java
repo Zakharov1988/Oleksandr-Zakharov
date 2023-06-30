@@ -15,7 +15,7 @@ public class DynamicallyElements {
     private SelenideElement StartButton = $("#start > button");
     private SelenideElement Hidden1 = $("#loading > img");
 
-    private SelenideElement Hidden2 = $("#finish > h4");
+    //private SelenideElement Hidden2 = $("#finish > h4");
 
     public void ShowDinamicloading (boolean hide) {
     linc1.click();
