@@ -16,7 +16,11 @@
         <testNgVersion>7.8.0</testNgVersion>
         <seleniumVersion>4.9.1</seleniumVersion>
         <wbManagerVersion>5.3.3</wbManagerVersion>
-        <selenideVersoin>6.15.0</selenideVersoin>
+        <selenideVersion>6.15.0</selenideVersion>
+        <okhttpVersion>4.11.0</okhttpVersion>
+        <jsonVersion>20230618</jsonVersion>
+        <gsonVersion>2.10.1</gsonVersion>
+        <lombokVersion>1.18.28</lombokVersion>
     </properties>
 
 
@@ -45,13 +49,34 @@
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>${selenideVersoin}</version>
+            <version>${selenideVersion}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>RELEASE</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>${okhttpVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${jsonVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gsonVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombokVersion}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     <build>
